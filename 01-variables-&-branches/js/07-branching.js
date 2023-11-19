@@ -48,7 +48,7 @@ const salary = 5000;
 //   message = 'Негативный баланс';
 // }
 
-// const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс';
+const message = balance >= 0 ? "Позитивный баланс" : "Негативный баланс";
 
 // console.log(message);
 

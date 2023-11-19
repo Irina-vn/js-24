@@ -82,3 +82,74 @@ console.log(normalizedString2.includes(blacklistedWord2));
 
 console.log(string3.includes(blacklistedWord1));
 console.log(string3.includes(blacklistedWord2));
+
+// slice
+
+function formatMessage(message, maxLength) {
+  let result;
+
+  if (message.length <= maxLength) {
+    result = message;
+    console.log(result);
+  } else {
+    // result = message.slice(message.length, maxLength);
+    // console.log(result);
+    result = message.slice(message, maxLength) + "...";
+    console.log(result);
+  }
+
+  return result;
+}
+
+formatMessage("Curabitur ligula sapien", 16);
+formatMessage("Curabitur ligula sapien", 23);
+formatMessage("Vestibulum facilisis purus nec", 20);
+formatMessage("Vestibulum facilisis purus nec", 30);
+formatMessage("Nunc sed turpis a felis in nunc fringilla", 15);
+formatMessage("Nunc sed turpis a felis in nunc fringilla", 41);
+
+// includes
+
+function checkForName(fullName, name) {
+  const result = fullName.includes(name);
+
+  return result;
+}
+
+checkForName("Egor Kolbasov", "Egor");
+checkForName("Egor Kolbasov", "egor");
+
+// toLowerCase/toUpperCase
+
+function normalizeInput(input) {
+  const normalizedInput = input.toLowerCase();
+
+  return normalizedInput;
+}
+normalizeInput("Hello world");
+normalizeInput("This ISN'T SpaM");
+normalizeInput("Big SALE");
+
+// length
+
+function formatMessage(message, maxLength) {
+  let result;
+
+  if (message.length <= maxLength) {
+    result = message;
+    console.log(result);
+  } else {
+    message;
+    result = message.slice(message, maxLength) + "...";
+
+    console.log(result);
+  }
+
+  return result;
+}
+formatMessage("Curabitur ligula sapien", 16);
+formatMessage("Curabitur ligula sapien", 23);
+formatMessage("Vestibulum facilisis purus nec", 20);
+formatMessage("Vestibulum facilisis purus nec", 30);
+formatMessage("Nunc sed turpis a felis in nunc fringilla", 15);
+formatMessage("Nunc sed turpis a felis in nunc fringilla", 41);
